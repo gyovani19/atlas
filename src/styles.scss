@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.stat{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.text-green{
+    color: green;
+}
+
+.text-dim-gray{
+    color: rgb(65, 130, 65);
+}
+
+.stat-subtext{
+    font-size: 10px;
+}
