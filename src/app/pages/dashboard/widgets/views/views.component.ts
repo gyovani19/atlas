@@ -79,7 +79,7 @@ export class ViewsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<any[]>('http://44.202.92.78:5000/api/registro-caso')
+    this.http.get<any[]>('http://52.90.31.216:5000/api/registro-caso')
       .subscribe({
         next: data => {
           this.totalCases = data.length;
