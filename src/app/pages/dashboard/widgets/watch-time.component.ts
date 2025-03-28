@@ -140,7 +140,7 @@ export class HeatmapComponent implements OnInit, AfterViewInit {
     });
 
     // Carrega os dados dos casos
-    this.http.get<any[]>('http://44.202.92.78:5000/api/registro-caso').subscribe({
+    this.http.get<any[]>('http://52.90.31.216:5000/api/registro-caso').subscribe({
       next: data => {
         this.casesData = data;
         this.initializeMapIfReady();
