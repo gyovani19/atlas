@@ -48,7 +48,7 @@ export class AnalyticsComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     // Consome o endpoint e armazena os dados
-    this.http.get<any[]>('http://44.202.92.78:5000/api/registro-caso')
+    this.http.get<any[]>('http://52.90.31.216:5000/api/registro-caso')
       .subscribe(data => {
         this.rawData = data;
         // Extrai os nomes únicos das doenças (normalizados para minúsculas)
