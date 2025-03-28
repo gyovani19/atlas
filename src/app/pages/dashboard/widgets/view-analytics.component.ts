@@ -27,7 +27,7 @@ export class ViewAnalyticsComponent implements AfterViewInit {
   constructor(private http: HttpClient) { }
 
   ngAfterViewInit() {
-    this.http.get<any[]>('http://44.202.92.78:5000/api/registro-caso')
+    this.http.get<any[]>('http://52.90.31.216:5000/api/registro-caso')
       .subscribe(data => {
         // Agrupa os registros pela descrição da doença
         const diseaseCount: { [key: string]: number } = {};
