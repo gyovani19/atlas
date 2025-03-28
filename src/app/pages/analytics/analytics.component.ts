@@ -232,7 +232,7 @@ export class AnalyticsComponent implements OnInit {
       ...this.formData
     };
 
-    this.http.post<RegistroDeCaso>('http://44.202.92.78:5000/api/registro-caso', payload)
+    this.http.post<RegistroDeCaso>('http://52.90.31.216:5000/api/registro-caso', payload)
       .subscribe({
         next: (novoRegistro) => {
           this.registros.push(novoRegistro);
