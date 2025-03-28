@@ -42,7 +42,7 @@ export class RevenueComponent implements AfterViewInit {
   constructor(private http: HttpClient) {}
 
   ngAfterViewInit(): void {
-    this.http.get<any[]>('http://44.202.92.78:5000/api/registro-caso')
+    this.http.get<any[]>('http://52.90.31.216:5000/api/registro-caso')
       .subscribe(data => {
         // Agrupa os registros pelo bairro (localizacao)
         const counts: { [bairro: string]: number } = {};
