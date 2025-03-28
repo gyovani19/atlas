@@ -211,7 +211,7 @@ export class AnalyticsComponent implements OnInit {
 
   // Busca os registros existentes da API
   fetchRegistros(): void {
-    this.http.get<RegistroDeCaso[]>('http://44.202.92.78:5000/api/registro-caso')
+    this.http.get<RegistroDeCaso[]>('http://52.90.31.216:5000/api/registro-caso')
       .subscribe({
         next: (data) => {
           this.registros = data;
